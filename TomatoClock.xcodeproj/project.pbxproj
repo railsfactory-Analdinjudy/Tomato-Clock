@@ -37,7 +37,7 @@
 		47F6C9B210F5FAD10049FF57 /* Introduction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47F6C9B110F5FAD10049FF57 /* Introduction.xib */; };
 		47F6C9B510F5FDE90049FF57 /* About.h in Headers */ = {isa = PBXBuildFile; fileRef = 47F6C9B310F5FDE90049FF57 /* About.h */; };
 		47F6C9B610F5FDE90049FF57 /* About.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F6C9B410F5FDE90049FF57 /* About.m */; };
-		47F6C9B910F5FE4D0049FF57 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47F6C9B810F5FE4D0049FF57 /* About.xib */; };
+		47F6C9BD10F600EA0049FF57 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47F6C9BC10F600EA0049FF57 /* About.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,7 +75,9 @@
 		47F6C9B110F5FAD10049FF57 /* Introduction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Introduction.xib; sourceTree = "<group>"; };
 		47F6C9B310F5FDE90049FF57 /* About.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = About.h; sourceTree = "<group>"; };
 		47F6C9B410F5FDE90049FF57 /* About.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = About.m; sourceTree = "<group>"; };
-		47F6C9B810F5FE4D0049FF57 /* About.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
+		47F6C9B810F5FE4D0049FF57 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/About.xib; sourceTree = "<group>"; };
+		47F6C9BE10F600F40049FF57 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/About.xib; sourceTree = "<group>"; };
+		47F6C9BF10F600FB0049FF57 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Japanese; path = Japanese.lproj/About.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,7 +151,7 @@
 				8D1107310486CEB800E47090 /* Info.plist */,
 				47BD6CE610E1F67700F5E4CD /* Tomatoview.xib */,
 				47A3410510EC5CC900DB803F /* TomatoList.xib */,
-				47F6C9B810F5FE4D0049FF57 /* About.xib */,
+				47F6C9BC10F600EA0049FF57 /* About.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -291,7 +293,7 @@
 				47F6C9AA10F5F3C90049FF57 /* info1.png in Resources */,
 				47F6C9AC10F5F9AA0049FF57 /* Icon.png in Resources */,
 				47F6C9B210F5FAD10049FF57 /* Introduction.xib in Resources */,
-				47F6C9B910F5FE4D0049FF57 /* About.xib in Resources */,
+				47F6C9BD10F600EA0049FF57 /* About.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +313,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		47F6C9BC10F600EA0049FF57 /* About.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47F6C9B810F5FE4D0049FF57 /* English */,
+				47F6C9BE10F600F40049FF57 /* French */,
+				47F6C9BF10F600FB0049FF57 /* Japanese */,
+			);
+			name = About.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
