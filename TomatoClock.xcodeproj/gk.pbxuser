@@ -182,7 +182,7 @@
 	};
 	32CA4F630368D1EE00C91783 /* TomatoClock_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {629, 559}}";
+			sepNavIntBoundsRect = "{{0, 0}, {629, 526}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 191}";
 		};

@@ -35,6 +35,9 @@
 		47F6C9AF10F5FAC70049FF57 /* Introduction.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F6C9AD10F5FAC70049FF57 /* Introduction.m */; };
 		47F6C9B010F5FAC70049FF57 /* Introduction.h in Headers */ = {isa = PBXBuildFile; fileRef = 47F6C9AE10F5FAC70049FF57 /* Introduction.h */; };
 		47F6C9B210F5FAD10049FF57 /* Introduction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47F6C9B110F5FAD10049FF57 /* Introduction.xib */; };
+		47F6C9B510F5FDE90049FF57 /* About.h in Headers */ = {isa = PBXBuildFile; fileRef = 47F6C9B310F5FDE90049FF57 /* About.h */; };
+		47F6C9B610F5FDE90049FF57 /* About.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F6C9B410F5FDE90049FF57 /* About.m */; };
+		47F6C9B910F5FE4D0049FF57 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47F6C9B810F5FE4D0049FF57 /* About.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,9 @@
 		47F6C9AD10F5FAC70049FF57 /* Introduction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Introduction.m; sourceTree = "<group>"; };
 		47F6C9AE10F5FAC70049FF57 /* Introduction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Introduction.h; sourceTree = "<group>"; };
 		47F6C9B110F5FAD10049FF57 /* Introduction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Introduction.xib; sourceTree = "<group>"; };
+		47F6C9B310F5FDE90049FF57 /* About.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = About.h; sourceTree = "<group>"; };
+		47F6C9B410F5FDE90049FF57 /* About.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = About.m; sourceTree = "<group>"; };
+		47F6C9B810F5FE4D0049FF57 /* About.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +99,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				47F6C9B310F5FDE90049FF57 /* About.h */,
+				47F6C9B410F5FDE90049FF57 /* About.m */,
 				47F6C9AD10F5FAC70049FF57 /* Introduction.m */,
 				47F6C9AE10F5FAC70049FF57 /* Introduction.h */,
 				1D3623240D0F684500981E51 /* TomatoClockAppDelegate.h */,
@@ -141,6 +149,7 @@
 				8D1107310486CEB800E47090 /* Info.plist */,
 				47BD6CE610E1F67700F5E4CD /* Tomatoview.xib */,
 				47A3410510EC5CC900DB803F /* TomatoList.xib */,
+				47F6C9B810F5FE4D0049FF57 /* About.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -218,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47F6C9B010F5FAC70049FF57 /* Introduction.h in Headers */,
+				47F6C9B510F5FDE90049FF57 /* About.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +291,7 @@
 				47F6C9AA10F5F3C90049FF57 /* info1.png in Resources */,
 				47F6C9AC10F5F9AA0049FF57 /* Icon.png in Resources */,
 				47F6C9B210F5FAD10049FF57 /* Introduction.xib in Resources */,
+				47F6C9B910F5FE4D0049FF57 /* About.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +306,7 @@
 				1D3623260D0F684500981E51 /* TomatoClockAppDelegate.m in Sources */,
 				47BD6CE410E1F65100F5E4CD /* Tomatoview.m in Sources */,
 				47F6C9AF10F5FAC70049FF57 /* Introduction.m in Sources */,
+				47F6C9B610F5FDE90049FF57 /* About.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
