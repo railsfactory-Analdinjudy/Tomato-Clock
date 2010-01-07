@@ -13,7 +13,6 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		4788540310F2E51A00185FE5 /* clapping-crowd-studio-01.caf in Resources */ = {isa = PBXBuildFile; fileRef = 4788540210F2E51A00185FE5 /* clapping-crowd-studio-01.caf */; };
 		4788542C10F2E5F900185FE5 /* Picture 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4788542510F2E5F900185FE5 /* Picture 1.png */; };
 		478AA0B810E3118200376337 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478AA0B710E3118200376337 /* AudioToolbox.framework */; };
 		47A3410610EC5CC900DB803F /* TomatoList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47A3410510EC5CC900DB803F /* TomatoList.xib */; };
@@ -27,7 +26,8 @@
 		47A6D1FA10F45C7C00158452 /* End.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A6D1F910F45C7C00158452 /* End.png */; };
 		47BD6CE410E1F65100F5E4CD /* Tomatoview.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BD6CE310E1F65100F5E4CD /* Tomatoview.m */; };
 		47BD6CE710E1F67700F5E4CD /* Tomatoview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47BD6CE610E1F67700F5E4CD /* Tomatoview.xib */; };
-		47D02C1010F32EED004915AE /* Start.caf in Resources */ = {isa = PBXBuildFile; fileRef = 47D02C0F10F32EED004915AE /* Start.caf */; };
+		47F6C98210F5F0610049FF57 /* clapping-crowd-studio-01.caf in Resources */ = {isa = PBXBuildFile; fileRef = 47F6C98110F5F0610049FF57 /* clapping-crowd-studio-01.caf */; };
+		47F6C98410F5F0660049FF57 /* Start.caf in Resources */ = {isa = PBXBuildFile; fileRef = 47F6C98310F5F0660049FF57 /* Start.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,6 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* TomatoClock_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TomatoClock_Prefix.pch; sourceTree = "<group>"; };
-		4788540210F2E51A00185FE5 /* clapping-crowd-studio-01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "clapping-crowd-studio-01.caf"; sourceTree = "<group>"; };
 		4788542510F2E5F900185FE5 /* Picture 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Picture 1.png"; sourceTree = "<group>"; };
 		478AA0B710E3118200376337 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
 		47A3410510EC5CC900DB803F /* TomatoList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TomatoList.xib; sourceTree = "<group>"; };
@@ -55,7 +54,8 @@
 		47BD6CE210E1F65100F5E4CD /* Tomatoview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tomatoview.h; sourceTree = "<group>"; };
 		47BD6CE310E1F65100F5E4CD /* Tomatoview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tomatoview.m; sourceTree = "<group>"; };
 		47BD6CE610E1F67700F5E4CD /* Tomatoview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Tomatoview.xib; sourceTree = "<group>"; };
-		47D02C0F10F32EED004915AE /* Start.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Start.caf; sourceTree = "<group>"; };
+		47F6C98110F5F0610049FF57 /* clapping-crowd-studio-01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "clapping-crowd-studio-01.caf"; sourceTree = "<group>"; };
+		47F6C98310F5F0660049FF57 /* Start.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Start.caf; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,8 +144,8 @@
 		478853FE10F2E50700185FE5 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				47D02C0F10F32EED004915AE /* Start.caf */,
-				4788540210F2E51A00185FE5 /* clapping-crowd-studio-01.caf */,
+				47F6C98310F5F0660049FF57 /* Start.caf */,
+				47F6C98110F5F0610049FF57 /* clapping-crowd-studio-01.caf */,
 			);
 			name = Audio;
 			sourceTree = "<group>";
@@ -245,15 +245,15 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				47BD6CE710E1F67700F5E4CD /* Tomatoview.xib in Resources */,
 				47A3410610EC5CC900DB803F /* TomatoList.xib in Resources */,
-				4788540310F2E51A00185FE5 /* clapping-crowd-studio-01.caf in Resources */,
 				4788542C10F2E5F900185FE5 /* Picture 1.png in Resources */,
-				47D02C1010F32EED004915AE /* Start.caf in Resources */,
 				47A6D14810F446A100158452 /* Meet.png in Resources */,
 				47A6D18110F44BF300158452 /* Picture 2.png in Resources */,
 				47A6D18C10F44C7500158452 /* Break.png in Resources */,
 				47A6D1A410F4554500158452 /* Checked.png in Resources */,
 				47A6D1A610F4554A00158452 /* Unchecked.png in Resources */,
 				47A6D1FA10F45C7C00158452 /* End.png in Resources */,
+				47F6C98210F5F0610049FF57 /* clapping-crowd-studio-01.caf in Resources */,
+				47F6C98410F5F0660049FF57 /* Start.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
