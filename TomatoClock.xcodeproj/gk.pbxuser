@@ -3,15 +3,15 @@
 	1D3623240D0F684500981E51 /* TomatoClockAppDelegate.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {629, 526}}";
-			sepNavSelRange = "{354, 190}";
+			sepNavSelRange = "{546, 0}";
 			sepNavVisRange = "{0, 547}";
 		};
 	};
 	1D3623250D0F684500981E51 /* TomatoClockAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {629, 560}}";
-			sepNavSelRange = "{571, 0}";
-			sepNavVisRange = "{3, 856}";
+			sepNavIntBoundsRect = "{{0, 0}, {629, 602}}";
+			sepNavSelRange = "{633, 0}";
+			sepNavVisRange = "{0, 699}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* TomatoClock */ = {
@@ -147,6 +147,19 @@
 			478F12E710F6DBCE00DF88F5 = 478F12E710F6DBCE00DF88F5 /* PBXTextBookmark */;
 			478F12FD10F6DCCD00DF88F5 = 478F12FD10F6DCCD00DF88F5 /* PBXTextBookmark */;
 			478F130510F6DCF000DF88F5 /* PBXTextBookmark */ = 478F130510F6DCF000DF88F5 /* PBXTextBookmark */;
+			478F131C10F6E2F200DF88F5 /* PBXTextBookmark */ = 478F131C10F6E2F200DF88F5 /* PBXTextBookmark */;
+			478F131D10F6E2F200DF88F5 /* PBXTextBookmark */ = 478F131D10F6E2F200DF88F5 /* PBXTextBookmark */;
+			478F131E10F6E2F200DF88F5 /* PBXTextBookmark */ = 478F131E10F6E2F200DF88F5 /* PBXTextBookmark */;
+			478F132010F6E2F200DF88F5 /* PBXTextBookmark */ = 478F132010F6E2F200DF88F5 /* PBXTextBookmark */;
+			478F132110F6E2F200DF88F5 /* PBXTextBookmark */ = 478F132110F6E2F200DF88F5 /* PBXTextBookmark */;
+			478F132210F6E2F200DF88F5 /* PBXTextBookmark */ = 478F132210F6E2F200DF88F5 /* PBXTextBookmark */;
+			478F132310F6E2F200DF88F5 /* PBXTextBookmark */ = 478F132310F6E2F200DF88F5 /* PBXTextBookmark */;
+			478F132410F6E2F200DF88F5 /* PBXTextBookmark */ = 478F132410F6E2F200DF88F5 /* PBXTextBookmark */;
+			478F132510F6E2F200DF88F5 /* PBXTextBookmark */ = 478F132510F6E2F200DF88F5 /* PBXTextBookmark */;
+			478F132610F6E2F200DF88F5 /* PBXTextBookmark */ = 478F132610F6E2F200DF88F5 /* PBXTextBookmark */;
+			478F132810F6E2F200DF88F5 /* PBXTextBookmark */ = 478F132810F6E2F200DF88F5 /* PBXTextBookmark */;
+			478F132910F6E2F200DF88F5 /* PBXTextBookmark */ = 478F132910F6E2F200DF88F5 /* PBXTextBookmark */;
+			478F132A10F6E2F200DF88F5 /* PBXTextBookmark */ = 478F132A10F6E2F200DF88F5 /* PBXTextBookmark */;
 			47A6D14A10F446E300158452 = 47A6D14A10F446E300158452 /* PBXBookmark */;
 			47A6D14B10F446E300158452 = 47A6D14B10F446E300158452 /* PBXBookmark */;
 			47A6D14F10F446E300158452 = 47A6D14F10F446E300158452 /* PBXBookmark */;
@@ -188,7 +201,7 @@
 	};
 	29B97316FDCFA39411CA2CEA /* main.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {629, 383}}";
+			sepNavIntBoundsRect = "{{0, 0}, {629, 526}}";
 			sepNavSelRange = "{354, 0}";
 			sepNavVisRange = "{0, 354}";
 		};
@@ -254,7 +267,7 @@
 		fRef = 1D3623250D0F684500981E51 /* TomatoClockAppDelegate.m */;
 		name = "TomatoClockAppDelegate.m: 28";
 		rLen = 0;
-		rLoc = 571;
+		rLoc = 0;
 		rType = 0;
 		vrLen = 856;
 		vrLoc = 3;
@@ -264,7 +277,7 @@
 		fRef = 1D3623250D0F684500981E51 /* TomatoClockAppDelegate.m */;
 		name = "TomatoClockAppDelegate.m: 28";
 		rLen = 0;
-		rLoc = 571;
+		rLoc = 0;
 		rType = 0;
 		vrLen = 856;
 		vrLoc = 3;
@@ -274,10 +287,152 @@
 		fRef = 1D3623250D0F684500981E51 /* TomatoClockAppDelegate.m */;
 		name = "TomatoClockAppDelegate.m: 28";
 		rLen = 0;
-		rLoc = 571;
+		rLoc = 0;
 		rType = 0;
 		vrLen = 856;
 		vrLoc = 3;
+	};
+	478F131C10F6E2F200DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 18";
+		rLen = 0;
+		rLoc = 354;
+		rType = 0;
+		vrLen = 354;
+		vrLoc = 0;
+	};
+	478F131D10F6E2F200DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 47F6C9AD10F5FAC70049FF57 /* Introduction.m */;
+		name = "Introduction.m: 44";
+		rLen = 0;
+		rLoc = 1027;
+		rType = 0;
+		vrLen = 946;
+		vrLoc = 0;
+	};
+	478F131E10F6E2F200DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 478F131F10F6E2F200DF88F5 /* TomatoClockAppDelegate.h */;
+		name = "TomatoClockAppDelegate.h: 24";
+		rLen = 0;
+		rLoc = 546;
+		rType = 0;
+		vrLen = 546;
+		vrLoc = 0;
+	};
+	478F131F10F6E2F200DF88F5 /* TomatoClockAppDelegate.h */ = {
+		isa = PBXFileReference;
+		name = TomatoClockAppDelegate.h;
+		path = /Users/gk/Desktop/TomatoClock/Classes/TomatoClockAppDelegate.h;
+		sourceTree = "<absolute>";
+	};
+	478F132010F6E2F200DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* TomatoClockAppDelegate.h */;
+		name = "TomatoClockAppDelegate.h: 24";
+		rLen = 0;
+		rLoc = 546;
+		rType = 0;
+		vrLen = 547;
+		vrLoc = 0;
+	};
+	478F132110F6E2F200DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 47BD6CE210E1F65100F5E4CD /* Tomatoview.h */;
+		name = "Tomatoview.h: 55";
+		rLen = 57;
+		rLoc = 1647;
+		rType = 0;
+		vrLen = 1583;
+		vrLoc = 1077;
+	};
+	478F132210F6E2F200DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* TomatoClockAppDelegate.m */;
+		name = "TomatoClockAppDelegate.m: 28";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 856;
+		vrLoc = 3;
+	};
+	478F132310F6E2F200DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* TomatoClockAppDelegate.m */;
+		name = "TomatoClockAppDelegate.m: 28";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 856;
+		vrLoc = 3;
+	};
+	478F132410F6E2F200DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 18";
+		rLen = 0;
+		rLoc = 354;
+		rType = 0;
+		vrLen = 354;
+		vrLoc = 0;
+	};
+	478F132510F6E2F200DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 47F6C9AD10F5FAC70049FF57 /* Introduction.m */;
+		name = "Introduction.m: 44";
+		rLen = 0;
+		rLoc = 1027;
+		rType = 0;
+		vrLen = 946;
+		vrLoc = 0;
+	};
+	478F132610F6E2F200DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 478F132710F6E2F200DF88F5 /* TomatoClockAppDelegate.h */;
+		name = "TomatoClockAppDelegate.h: 24";
+		rLen = 0;
+		rLoc = 546;
+		rType = 0;
+		vrLen = 546;
+		vrLoc = 0;
+	};
+	478F132710F6E2F200DF88F5 /* TomatoClockAppDelegate.h */ = {
+		isa = PBXFileReference;
+		name = TomatoClockAppDelegate.h;
+		path = /Users/gk/Desktop/TomatoClock/Classes/TomatoClockAppDelegate.h;
+		sourceTree = "<absolute>";
+	};
+	478F132810F6E2F200DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* TomatoClockAppDelegate.h */;
+		name = "TomatoClockAppDelegate.h: 24";
+		rLen = 0;
+		rLoc = 546;
+		rType = 0;
+		vrLen = 547;
+		vrLoc = 0;
+	};
+	478F132910F6E2F200DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 47BD6CE210E1F65100F5E4CD /* Tomatoview.h */;
+		name = "Tomatoview.h: 55";
+		rLen = 57;
+		rLoc = 1647;
+		rType = 0;
+		vrLen = 1583;
+		vrLoc = 1077;
+	};
+	478F132A10F6E2F200DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* TomatoClockAppDelegate.m */;
+		name = "TomatoClockAppDelegate.m: 32";
+		rLen = 0;
+		rLoc = 633;
+		rType = 0;
+		vrLen = 699;
+		vrLoc = 0;
 	};
 	47A6D14A10F446E300158452 /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -378,9 +533,9 @@
 	};
 	47BD6CE210E1F65100F5E4CD /* Tomatoview.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {629, 1190}}";
+			sepNavIntBoundsRect = "{{0, 0}, {629, 1316}}";
 			sepNavSelRange = "{1647, 57}";
-			sepNavVisRange = "{1228, 1119}";
+			sepNavVisRange = "{1077, 1583}";
 		};
 	};
 	47BD6CE310E1F65100F5E4CD /* Tomatoview.m */ = {
@@ -443,9 +598,9 @@
 	};
 	47F6C9AD10F5FAC70049FF57 /* Introduction.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {900, 980}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 928}";
+			sepNavIntBoundsRect = "{{0, 0}, {900, 1008}}";
+			sepNavSelRange = "{1027, 0}";
+			sepNavVisRange = "{0, 946}";
 		};
 	};
 	47F6C9AE10F5FAC70049FF57 /* Introduction.h */ = {

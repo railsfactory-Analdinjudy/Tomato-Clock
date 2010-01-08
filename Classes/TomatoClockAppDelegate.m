@@ -7,21 +7,27 @@
 //
 
 #import "TomatoClockAppDelegate.h"
+#import"Introduction.h"
 #import"Tomatoview.h"
 @implementation TomatoClockAppDelegate
 
-@synthesize window,tomatoview;
+@synthesize window,introduction,tomatoview;
 
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {    
+- (void)applicationDidFinishLaunching:(UIApplication *)application 
 
+{    
 	
-	Tomatoview *temp = [[Tomatoview alloc] initWithNibName:@"Tomatoview" bundle:nil];
-	self.tomatoview = temp;
-	[temp release];
-	[window addSubview:self.tomatoview.view];
+	
+	
+	Introduction *temp = [[Introduction alloc] initWithNibName:@"Introduction" bundle:nil];
+	self.introduction = temp;
+	[introduction showSplash];
+	[temp release];s
+	[window addSubview:self.introduction.view];
 	[window makeKeyAndVisible];
-   
+	
+	
 }
 
 
@@ -32,8 +38,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
 	// Save data if appropriate
-/*	Tomatoview *temp = [[Tomatoview alloc] initWithNibName:@"Tomatoview" bundle:nil];
-	printf("Terminate");
-	sqlite3_close(temp.tomato_db);*/
+	
 }
+
 @end
