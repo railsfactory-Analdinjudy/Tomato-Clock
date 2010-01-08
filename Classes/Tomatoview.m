@@ -35,6 +35,8 @@ BOOL issecondplay=FALSE;
 BOOL checked =FALSE;
 BOOL loop =FALSE;
 BOOL reset= FALSE;
+BOOL Start =FALSE;
+BOOL isPlay2 =FALSE;
 /*
  // Override initWithNibName:bundle: to load the view using a nib file then perform additional customization that is not appropriate for viewDidLoad.
  - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -126,13 +128,17 @@ BOOL reset= FALSE;
 //increment the timer
 - (IBAction)start {
 	UIImage* img1 = [UIImage imageNamed:@"Meet.png"];
+	Start =TRUE;
 	imageview1.image=img1;
-	
+	btncheck.enabled=FALSE;
+	btncheck1.enabled=FALSE;
 	isPlayaudio1 =TRUE;
 	issecondplay=FALSE;
+	isPlay2 =FALSE;
 	printf("start............. \n");
 	btnstart.hidden =TRUE;
 	btnpause.hidden=FALSE;
+	btnreset.enabled=TRUE;
 	//btnreset.hidden =FALSE;
 	
 	if(isTimerTicking)
@@ -193,6 +199,7 @@ BOOL reset= FALSE;
 - (IBAction)reset {
 	//Set the count in the textfield
 	printf("Reset");
+	Start = FALSE;
 	UIImage* img1 = [UIImage imageNamed:@"Meet.png"];
 	imageview1.image=img1;
 	reset =TRUE;
@@ -203,6 +210,26 @@ BOOL reset= FALSE;
 	isPlayaudio1 =TRUE;
 	isTimerTicking=TRUE;
 	issecondplay == TRUE;
+	
+	
+	if(isPlayaudio1 ==TRUE)
+	{
+		
+		[timer10 invalidate];
+	}	
+		
+/*	if(isPlay2 == FALSE)
+	{	
+	    printf("isPlay2 == FALSE"); 
+		[timer invalidate];
+		
+	}	*/
+	 if(isPlay2 == TRUE)
+	{
+		printf("isPlay2 == TRUE");
+		[timer10 invalidate];	
+	}	
+	isPlay2 =FALSE;
 	printf("Reset1111111111");	
 	if (issecondplay == TRUE)
 	{
@@ -226,7 +253,7 @@ BOOL reset= FALSE;
 		if(loop == TRUE)
 		{	
 			times = 25.0;
-			
+			loop = FALSE;
 		}
 		else
 		{
@@ -272,7 +299,7 @@ BOOL reset= FALSE;
 -(void)countDowns {
 	printf("countDownsssssssssss");
 	printf("times =%d",times);
-	
+	reset = TRUE;
 	times = times - 1;
 	if (times == -1) {
 		isCount =TRUE;
@@ -294,9 +321,12 @@ BOOL reset= FALSE;
 	printf("play222222222222222.......\n");
 	printf("times =%d",times);
 	times = times - 1;
+	isPlay2 = TRUE;
+	loop =FALSE;
+	//isPlayaudio1 = FALSE;
 	if (times == -1) {
 		isCount =TRUE;
-		
+		printf("\n playaudio2..... \n");
 		//sleep(7);
 		[timer10 invalidate];
 		/*[timer2 invalidate];
@@ -356,9 +386,12 @@ BOOL reset= FALSE;
 -(void) playaudio1
 {
 	printf("playaudio1");
+	btnreset.enabled=FALSE;
 	lbltimer.text = @"00";
 	isPlayaudio1 =TRUE;
 	isPlayaudio2=FALSE;
+	isPlay2 =FALSE;
+	loop =FALSE;
 	NSString *clapPath = [[NSBundle mainBundle] pathForResource:@"clapping-crowd-studio-01" ofType:@"caf"];
 	CFURLRef clapURL = (CFURLRef ) [NSURL fileURLWithPath:clapPath];
 	AudioServicesCreateSystemSoundID (clapURL, &clappingFileID);
@@ -368,10 +401,14 @@ BOOL reset= FALSE;
 
 
 -(void) playaudios
-{
+{   
 	printf("playaudios");
-	isPlayaudio1 =FALSE;
-	isPlayaudio2=TRUE;
+	btnreset.enabled=FALSE;
+	btnpause.enabled=FALSE;
+	isPlayaudio1 =TRUE;
+	isPlayaudio2=FALSE;
+	isPlay2 =FALSE;
+	loop=FALSE;
 	NSString *clapPath = [[NSBundle mainBundle] pathForResource:@"clapping-crowd-studio-01" ofType:@"caf"];
 	CFURLRef clapURL = (CFURLRef ) [NSURL fileURLWithPath:clapPath];
 	AudioServicesCreateSystemSoundID (clapURL, &clappingFileID);
@@ -383,8 +420,12 @@ BOOL reset= FALSE;
 -(void) playaudio2
 {
 	printf("playaudios");
+	btnreset.enabled=FALSE;
+	btnpause.enabled=FALSE;
 	isPlayaudio1 =FALSE;
 	isPlayaudio2=TRUE;
+	//isPlay2 =FALSE;
+	
 	NSString *clapPath = [[NSBundle mainBundle] pathForResource:@"Start" ofType:@"caf"];
 	CFURLRef clapURL = (CFURLRef ) [NSURL fileURLWithPath:clapPath];
 	AudioServicesCreateSystemSoundID (clapURL, &clappingFileID);
@@ -392,14 +433,23 @@ BOOL reset= FALSE;
 	
 	if(checked == TRUE)
 	{	
+		printf("checked");
 		sleep(5);	
 		loop =TRUE;	
+		
 		[self reset];
 	}	
 	else
-	{
+	{   [timer10 invalidate];
 		UIImage* img1 = [UIImage imageNamed:@"End.png"];
 		imageview1.image=img1;
+		btnreset.enabled=FALSE;
+		btnstart.hidden=FALSE;
+		btnpause.hidden=TRUE;
+		btnplay.hidden=TRUE;
+		lbltimer.text=@"25";
+		btncheck.enabled=TRUE;
+		btncheck1.enabled=TRUE;
 		
 	}
 }	
@@ -414,15 +464,54 @@ BOOL reset= FALSE;
 
 {
 	
+	printf("pause");
+	btncheck.enabled=TRUE;
+	btncheck1.enabled=TRUE;
 	btnplay.hidden =FALSE;
 	btnpause.hidden =TRUE;
 	btnreset.enabled=FALSE;
-	[timer invalidate];
-	if(reset == FALSE)
+	
+	
+		
+	if(isPlay2 == TRUE)
+		
+	{    printf("isPlay2 == TRUE");
+		
+		
+		[timer10 invalidate];	
+	 	
+	}	
+	else if(reset == FALSE)
 	{
+		printf("reset == FALSE");
 		[timer invalidate];
 		[timer2 invalidate];
 	}	
+	else if(reset == TRUE)
+    {		
+	  printf("reset == TRUE");
+	  [timer2 invalidate];
+	}
+	
+	else if (Start == TRUE)
+	{    printf("Start == TRUE");
+		[timer invalidate];
+		
+	}
+	
+	
+	else if(isPlay2 == TRUE)
+		
+	{    printf("isPlay2 == TRUE");
+		[timer10 invalidate];	
+	 	
+	}	
+	else
+	{
+	 printf("else");	
+	 [timer invalidate];	
+	}
+		
 	isTimerTicking =FALSE;
 	if(isPlayaudio1 == TRUE)
 	{	
@@ -437,7 +526,7 @@ BOOL reset= FALSE;
 -(IBAction) play
 
 {
-	
+	printf("play");
 	btnplay.hidden =TRUE;
 	btnpause.hidden =FALSE;
 	isTimerTicking =TRUE;
@@ -448,21 +537,34 @@ BOOL reset= FALSE;
 	//printf("Times1 = %i",times1);
 	
 	printf("\n times..........=%i\n",times);
-	if(isPlayaudio1 == TRUE)
+	if(isPlay2 == TRUE)
+	{
+		timer10 = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self selector:@selector (play2) userInfo:nil repeats:YES];
+	}
+	
+	else if(isPlayaudio1 == TRUE)
 	{	
 		timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self selector:@selector (countDown) userInfo:nil repeats:YES];
 	}
-	
+	else if(isPlayaudio1 == FALSE)
+		
+	{
+	 timer2 = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self selector:@selector (countDowns) userInfo:nil repeats:YES];	
+		
+	}
 	else
 	{
-		timer2 = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self selector:@selector (countDown1) userInfo:nil repeats:YES];
+	 printf("Done");	
 	}
+	
 }	
 
 //Start.caf
 -(void) mytime
 {
 	isCount =FALSE;
+	btnreset.enabled=TRUE;
+	btnpause.enabled=TRUE;
 	UIImage* img1 = [UIImage imageNamed:@"break.png"];
 	imageview1.image=img1;
 	printf("mytime................\n");
@@ -482,6 +584,8 @@ BOOL reset= FALSE;
 	printf("mytime................\n");
 	isCount =FALSE;
 	isTimerTicking =TRUE;
+	btnreset.enabled=TRUE;
+	btnpause.enabled=TRUE;
 	//issecondplay =TRUE;
 	UIImage* img1 = [UIImage imageNamed:@"Meet.png"];
 	imageview1.image=img1;

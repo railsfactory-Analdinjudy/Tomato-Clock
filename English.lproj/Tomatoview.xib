@@ -219,7 +219,7 @@
 					<object class="IBUIButton" id="564864907">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{155, 399}, {88, 55}}</string>
+						<string key="NSFrame">{{165, 399}, {88, 55}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
@@ -227,6 +227,7 @@
 						</object>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
+						<bool key="IBUIEnabled">NO</bool>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<reference key="IBUIFont" ref="40254101"/>
@@ -252,7 +253,7 @@
 					<object class="IBUIButton" id="74695912">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">-2147483356</int>
-						<string key="NSFrame">{{57, 399}, {88, 55}}</string>
+						<string key="NSFrame">{{67, 399}, {88, 55}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -278,7 +279,7 @@
 					<object class="IBUIButton" id="296976189">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{57, 399}, {88, 55}}</string>
+						<string key="NSFrame">{{67, 399}, {88, 55}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">2</int>
@@ -308,7 +309,7 @@
 					<object class="IBUIButton" id="92957143">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">-2147483356</int>
-						<string key="NSFrame">{{57, 399}, {88, 55}}</string>
+						<string key="NSFrame">{{67, 399}, {88, 55}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -446,6 +447,38 @@
 					</object>
 					<int key="connectionID">61</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btnpause</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="92957143"/>
+					</object>
+					<int key="connectionID">62</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btnplay</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="74695912"/>
+					</object>
+					<int key="connectionID">63</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btnreset</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="564864907"/>
+					</object>
+					<int key="connectionID">65</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">btnstart</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="296976189"/>
+					</object>
+					<int key="connectionID">66</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -473,8 +506,8 @@
 							<reference ref="95525487"/>
 							<reference ref="564864907"/>
 							<reference ref="74695912"/>
-							<reference ref="92957143"/>
 							<reference ref="296976189"/>
+							<reference ref="92957143"/>
 						</object>
 						<reference key="parent" ref="360949347"/>
 					</object>
@@ -612,7 +645,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">61</int>
+			<int key="maxID">66</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
