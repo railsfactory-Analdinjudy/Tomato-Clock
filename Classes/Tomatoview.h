@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import<AudioToolbox/AudioServices.h>
 @class TomatoClockAppDelegate;
-
+@class About;
 
 @interface Tomatoview : UIViewController {
 	IBOutlet UILabel *lbltimer;
@@ -17,6 +17,7 @@
 	IBOutlet UIButton *btnpause;
 	IBOutlet UIButton *btnreset;
 	IBOutlet UIButton *btnplay;
+	About *about;
     NSTimer *timer,*timer1,*timer2,*timer3,*timer10,*timer11;
 	SystemSoundID clappingFileID;
 	SystemSoundID clappingFileID1;
@@ -30,7 +31,7 @@
 	NSString *mydate;
 	NSString *comments;
 	TomatoClockAppDelegate *tomatoapp;
-
+    Tomatoview *tomatoview;
 	//TomatoList *tomatolist;
 	IBOutlet UIWindow *window;
 	NSDate *selected;
@@ -45,6 +46,7 @@
 @property(nonatomic,retain) IBOutlet UIButton *btnpause;
 @property(nonatomic,retain) IBOutlet UIButton *btnreset;
 @property(nonatomic,retain) IBOutlet UIButton *btnplay;
+@property(nonatomic,retain) About *about;
 @property(nonatomic,retain) NSTimer *timer;
 @property(nonatomic,retain) NSTimer *timer1;
 @property(nonatomic,retain) NSTimer *timer2;
@@ -60,6 +62,7 @@
 @property(nonatomic,retain) NSString *mydate;
 @property(nonatomic,retain) NSString *comments;
 @property(nonatomic,retain)  TomatoClockAppDelegate *tomatoapp;
+@property(nonatomic,retain) Tomatoview *tomatoview;
 //@property(nonatomic,retain) TomatoList *tomatolist;  
 //@property(nonatomic) sqlite3 *tomato_db;
 @property(nonatomic,retain) IBOutlet UIWindow *window;
@@ -75,7 +78,7 @@
 -(IBAction) play;
 -(IBAction) check;
 -(IBAction) uncheck;
-
+-(IBAction) About;
 -(void) timerTick;
 -(void) stop1;
 -(void) playaudio1;

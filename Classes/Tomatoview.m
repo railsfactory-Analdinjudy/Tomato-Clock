@@ -11,12 +11,14 @@
 //#import <sqlite3.h>
 #import<AudioToolbox/AudioServices.h>
 #import"TomatoClockAppDelegate.h"
+#import"About.h"
 //#import "TomatoList.h"
 
 @implementation Tomatoview
 
 @synthesize lbltimer,btnpause,btnstart,timer,clappingFileID,btnreset,btnplay,clappingFileID1,tomatoarray,mydate
-,comments,tomatoapp,window,selected,txtfld1,timer1,timer2,timer3,timer10,timer11,imageview1,btncheck,btncheck1;
+,comments,tomatoapp,window,selected,txtfld1,timer1,timer2,timer3,timer10,timer11,imageview1,btncheck,btncheck1
+,about,tomatoview;
 
 
 BOOL isTimerTicking = TRUE;
@@ -32,22 +34,22 @@ BOOL isCount1=FALSE;
 BOOL issecondplay=FALSE;
 BOOL checked =FALSE;
 BOOL loop =FALSE;
+BOOL reset= FALSE;
+/*
+ // Override initWithNibName:bundle: to load the view using a nib file then perform additional customization that is not appropriate for viewDidLoad.
+ - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+ if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+ // Custom initialization
+ }
+ return self;
+ }
+ */
 
 /*
-// Override initWithNibName:bundle: to load the view using a nib file then perform additional customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-/*
-// Implement loadView to create a view hierarchy programmatically.
-- (void)loadView {
-}
-*/
+ // Implement loadView to create a view hierarchy programmatically.
+ - (void)loadView {
+ }
+ */
 - (void)applicationWillTerminate:(UIApplication *)application {
 	// Save data if appropriate
 	//printf("Terminate");
@@ -60,10 +62,16 @@ BOOL loop =FALSE;
 	
 	//[self ontimer];
 	//[self updateLabel];
-   
-	[super viewDidLoad];
 	
-	}
+	[super viewDidLoad];
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	NSArray *languages = [defaults objectForKey:@"AppleLanguages"];
+	NSString *currentLanguage = [languages objectAtIndex:0];
+	printf("Current Locale: %s", [[NSLocale currentLocale] localeIdentifier]);
+	printf("Current language: %s", currentLanguage);
+	//printf("Welcome Text: %s", NSLocalizedString(@"WelcomeKey", @""));
+	
+}
 
 
 
@@ -88,7 +96,7 @@ BOOL loop =FALSE;
 
 -(void)awakeFromNib {
 	
-lbltimer.text=@"00";
+	lbltimer.text=@"00";
 	
 }
 
@@ -100,7 +108,7 @@ lbltimer.text=@"00";
 	checked = TRUE;
 	
 }
-   
+
 
 //To display check box
 -(IBAction) uncheck
@@ -124,17 +132,18 @@ lbltimer.text=@"00";
 	issecondplay=FALSE;
 	printf("start............. \n");
 	btnstart.hidden =TRUE;
-	btnreset.hidden =FALSE;
+	btnpause.hidden=FALSE;
+	//btnreset.hidden =FALSE;
 	
 	if(isTimerTicking)
 	{	
 		printf("Timer Tick");
 		if(isCount==FALSE)
 		{
-		[timer2 invalidate];
-		//[timer3 invalidate];
+			[timer2 invalidate];
+			//[timer3 invalidate];
         }
-			
+		
 		times = 25.0;
 		timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self selector:@selector (countDown) userInfo:nil repeats:YES];
 		//timer1 = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self selector:@selector (ontimer) userInfo:nil repeats:YES];
@@ -152,31 +161,31 @@ lbltimer.text=@"00";
 
 
 /*-(void) ontimer
-{      printf("\n........ontimer \n");
-	if(isTimerTicking)
-	{	
-		printf("ontimer");
-		
-		detailsTimeFormatter = [[NSDateFormatter alloc] init];
-		//[detailsTimeFormatter setDateStyle:NSDateFormatterMediumStyle];
-		[detailsTimeFormatter setTimeStyle:NSDateFormatterMediumStyle];
-	}	
-}	
-
-
-
--(void) ontimer1
-{      printf("\n........ontimer1 \n");
-	if(isTimerTicking)
-	{	
-		printf("ontimer1");
-		
-		detailsTimeFormatter = [[NSDateFormatter alloc] init];
-		//[detailsTimeFormatter setDateStyle:NSDateFormatterMediumStyle];
-		[detailsTimeFormatter setTimeStyle:NSDateFormatterMediumStyle];
-	}	
-}	
-*/
+ {      printf("\n........ontimer \n");
+ if(isTimerTicking)
+ {	
+ printf("ontimer");
+ 
+ detailsTimeFormatter = [[NSDateFormatter alloc] init];
+ //[detailsTimeFormatter setDateStyle:NSDateFormatterMediumStyle];
+ [detailsTimeFormatter setTimeStyle:NSDateFormatterMediumStyle];
+ }	
+ }	
+ 
+ 
+ 
+ -(void) ontimer1
+ {      printf("\n........ontimer1 \n");
+ if(isTimerTicking)
+ {	
+ printf("ontimer1");
+ 
+ detailsTimeFormatter = [[NSDateFormatter alloc] init];
+ //[detailsTimeFormatter setDateStyle:NSDateFormatterMediumStyle];
+ [detailsTimeFormatter setTimeStyle:NSDateFormatterMediumStyle];
+ }	
+ }	
+ */
 
 
 //increment the timer
@@ -186,10 +195,10 @@ lbltimer.text=@"00";
 	printf("Reset");
 	UIImage* img1 = [UIImage imageNamed:@"Meet.png"];
 	imageview1.image=img1;
-	
+	reset =TRUE;
 	isTimerTicking =FALSE;
-	btnstart.hidden =FALSE;
-	btnreset.hidden =TRUE;
+	//btnstart.hidden =FALSE;
+	//btnreset.hidden =TRUE;
 	//Playing audio
 	isPlayaudio1 =TRUE;
 	isTimerTicking=TRUE;
@@ -208,15 +217,15 @@ lbltimer.text=@"00";
 		
 		printf("isTimerTicking");
 		if(isCount1==FALSE)
-	{
-		printf("isCount1");
-		[timer invalidate];
-		[timer1 invalidate];
-	}
+		{
+			printf("isCount1");
+			[timer invalidate];
+			[timer1 invalidate];
+		}
 		printf("Restsssssss...........\n");
 		if(loop == TRUE)
 		{	
-		  times = 25.0;
+			times = 25.0;
 			
 		}
 		else
@@ -245,15 +254,15 @@ lbltimer.text=@"00";
 		}
 		else
 		{	
-		
-		[timer invalidate];
-		//[timer1 invalidate];
+			
+			[timer invalidate];
+			//[timer1 invalidate];
 		}
 		[self playaudio1];
 	}
 	if(times >=0)
 	{	
-	[self updateLabel];
+		[self updateLabel];
 	}
 }
 
@@ -291,7 +300,7 @@ lbltimer.text=@"00";
 		//sleep(7);
 		[timer10 invalidate];
 		/*[timer2 invalidate];
-		[timer3 invalidate];*/
+		 [timer3 invalidate];*/
 		
 		[self playaudio2];
 	}
@@ -333,11 +342,11 @@ lbltimer.text=@"00";
 -(void) updateLabel {
 	if(times>=10)
 	{
-	lbltimer.text = [NSString stringWithFormat:@"%i" , times];
+		lbltimer.text = [NSString stringWithFormat:@"%i" , times];
 	}
 	else
 	{
-	 lbltimer.text = [NSString stringWithFormat:"0"@"%i" , times];
+		lbltimer.text = [NSString stringWithFormat:"0"@"%i" , times];
 		
 	}	
 	//lbltimer.text =[[detailsTimeFormatter stringFromDate:[NSDate date]] lowercaseString];
@@ -383,15 +392,15 @@ lbltimer.text=@"00";
 	
 	if(checked == TRUE)
 	{	
-	 sleep(5);	
-	 loop =TRUE;	
-	 [self reset];
+		sleep(5);	
+		loop =TRUE;	
+		[self reset];
 	}	
 	else
 	{
 		UIImage* img1 = [UIImage imageNamed:@"End.png"];
 		imageview1.image=img1;
-	
+		
 	}
 }	
 
@@ -407,8 +416,13 @@ lbltimer.text=@"00";
 	
 	btnplay.hidden =FALSE;
 	btnpause.hidden =TRUE;
+	btnreset.enabled=FALSE;
 	[timer invalidate];
-	[timer2 invalidate];
+	if(reset == FALSE)
+	{
+		[timer invalidate];
+		[timer2 invalidate];
+	}	
 	isTimerTicking =FALSE;
 	if(isPlayaudio1 == TRUE)
 	{	
@@ -427,6 +441,7 @@ lbltimer.text=@"00";
 	btnplay.hidden =TRUE;
 	btnpause.hidden =FALSE;
 	isTimerTicking =TRUE;
+	btnreset.enabled=TRUE;
 	//NSString *mylbl = lbltimer.text;
 	//NSNumber *times1 = [NSNumber numberWithInt:mylbl];
 	
@@ -435,7 +450,7 @@ lbltimer.text=@"00";
 	printf("\n times..........=%i\n",times);
 	if(isPlayaudio1 == TRUE)
 	{	
-	timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self selector:@selector (countDown) userInfo:nil repeats:YES];
+		timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self selector:@selector (countDown) userInfo:nil repeats:YES];
 	}
 	
 	else
@@ -447,11 +462,11 @@ lbltimer.text=@"00";
 //Start.caf
 -(void) mytime
 {
-	
+	isCount =FALSE;
 	UIImage* img1 = [UIImage imageNamed:@"break.png"];
 	imageview1.image=img1;
 	printf("mytime................\n");
-   issecondplay =TRUE;
+	issecondplay =TRUE;
   	if(isTimerTicking)
 	{	 sleep(5);
 		printf("Inside of mytime");
@@ -465,6 +480,7 @@ lbltimer.text=@"00";
 -(void) mytimes
 {
 	printf("mytime................\n");
+	isCount =FALSE;
 	isTimerTicking =TRUE;
 	//issecondplay =TRUE;
 	UIImage* img1 = [UIImage imageNamed:@"Meet.png"];
@@ -476,5 +492,33 @@ lbltimer.text=@"00";
 	}	
 }
 
+-(IBAction) About
+{
+	UIView *mainView = tomatoview.view;
+	[UIView setAnimationDuration:1];
+	//[UIView setAnimationTransition:([mainView superview] ? UIViewAnimationTransitionFlipFromRight : UIViewAnimationTransitionFlipFromLeft) forView:self.view cache:YES];
+	About *temp = [[About alloc] initWithNibName:@"About" bundle:nil];
+	self.about = temp;
+	[temp release];
+	[self.view addSubview:self.about.view];
+	//[self.view setAnimationTransition:( [ ? UIViewAnimationTransitionFlipFromRight : UIViewAnimationTransitionFlipFromLeft) forView:self.view cache:YES];
+	//[self.view setAnimation
+	[UIView setAnimationTransition:([mainView superview] ? UIViewAnimationTransitionFlipFromRight : UIViewAnimationTransitionFlipFromLeft) forView:self.view cache:YES];								
+	[window makeKeyAndVisible];
+	
+	
+	
+}
+
+
+
+
+
+/*
+ 
+ [UIView setAnimationDuration:1];
+ [UIView setAnimationTransition:([mainView superview] ? UIViewAnimationTransitionFlipFromRight : UIViewAnimationTransitionFlipFromLeft) forView:self.view cache:YES];
+ 
+ */
 
 @end

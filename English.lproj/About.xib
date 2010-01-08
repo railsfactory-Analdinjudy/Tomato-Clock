@@ -51,7 +51,7 @@
 					<object class="IBUILabel" id="803541223">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{98, 20}, {135, 21}}</string>
+						<string key="NSFrame">{{98, 25}, {135, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -74,7 +74,7 @@
 					<object class="IBUIButton" id="104752020">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{7, 20}, {21, 27}}</string>
+						<string key="NSFrame">{{8, 22}, {21, 27}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -203,7 +203,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>About</string>
 					<string>UIResponder</string>
-					<string>{{354, 244}, {320, 480}}</string>
+					<string>{{397, 224}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -250,7 +250,7 @@
 			</object>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.LastKnownRelativeProjectPath">TomatoClock.xcodeproj</string>
+		<string key="IBDocument.LastKnownRelativeProjectPath">../TomatoClock.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 	</data>
 </archive>

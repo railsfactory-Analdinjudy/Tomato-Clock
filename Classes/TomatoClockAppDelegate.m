@@ -23,7 +23,7 @@
 	Introduction *temp = [[Introduction alloc] initWithNibName:@"Introduction" bundle:nil];
 	self.introduction = temp;
 	[introduction showSplash];
-	[temp release];s
+	[temp release];
 	[window addSubview:self.introduction.view];
 	[window makeKeyAndVisible];
 	

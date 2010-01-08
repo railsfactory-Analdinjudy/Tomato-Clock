@@ -469,6 +469,15 @@
 					</object>
 					<int key="connectionID">79</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">About</string>
+						<reference key="source" ref="82615624"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">80</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -599,7 +608,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>Tomatoview</string>
 					<string>UIResponder</string>
-					<string>{{344, 224}, {320, 480}}</string>
+					<string>{{49, 218}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -635,7 +644,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">79</int>
+			<int key="maxID">80</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -647,6 +656,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSMutableArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>About</string>
 							<string>check</string>
 							<string>mydates</string>
 							<string>pause</string>
@@ -657,6 +667,7 @@
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>

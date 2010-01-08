@@ -34,6 +34,7 @@
 -(void) Displayview
 {
 	printf("Displayview");	
+	[activityIndicator stopAnimating];
 	Tomatoview *temp1 = [[Tomatoview alloc] initWithNibName:@"Tomatoview" bundle:nil];
 	self.tomatoview = temp1;
 	[temp1 release];
