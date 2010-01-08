@@ -148,8 +148,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				478F131810F6DDC800DF88F5 /* Start.caf */,
-				478F131910F6DDC800DF88F5 /* clapping-crowd-studio-01.caf */,
 				47F6C9B110F5FAD10049FF57 /* Introduction.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -219,6 +217,8 @@
 		478F130410F6DCE800DF88F5 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				478F131910F6DDC800DF88F5 /* clapping-crowd-studio-01.caf */,
+				478F131810F6DDC800DF88F5 /* Start.caf */,
 			);
 			name = Audio;
 			sourceTree = "<group>";
