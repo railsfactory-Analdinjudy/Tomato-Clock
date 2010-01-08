@@ -169,6 +169,9 @@
 			4722562910F6EAC700671C90 /* PBXTextBookmark */ = 4722562910F6EAC700671C90 /* PBXTextBookmark */;
 			4722563210F6EB1400671C90 /* PBXTextBookmark */ = 4722563210F6EB1400671C90 /* PBXTextBookmark */;
 			4722563F10F6EC8000671C90 /* PBXTextBookmark */ = 4722563F10F6EC8000671C90 /* PBXTextBookmark */;
+			4722564410F6F0AD00671C90 /* PBXTextBookmark */ = 4722564410F6F0AD00671C90 /* PBXTextBookmark */;
+			4722565410F6F1C700671C90 /* PBXTextBookmark */ = 4722565410F6F1C700671C90 /* PBXTextBookmark */;
+			4722567810F6F75F00671C90 /* PBXTextBookmark */ = 4722567810F6F75F00671C90 /* PBXTextBookmark */;
 			478853DF10F2E35D00185FE5 = 478853DF10F2E35D00185FE5 /* PlistBookmark */;
 			478AA3AB10E3894000376337 = 478AA3AB10E3894000376337 /* PlistBookmark */;
 			478F131C10F6E2F200DF88F5 = 478F131C10F6E2F200DF88F5 /* PBXTextBookmark */;
@@ -541,6 +544,36 @@
 		vrLen = 848;
 		vrLoc = 0;
 	};
+	4722564410F6F0AD00671C90 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 47BD6CE310E1F65100F5E4CD /* Tomatoview.m */;
+		name = "Tomatoview.m: 32";
+		rLen = 0;
+		rLoc = 762;
+		rType = 0;
+		vrLen = 848;
+		vrLoc = 0;
+	};
+	4722565410F6F1C700671C90 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 47BD6CE310E1F65100F5E4CD /* Tomatoview.m */;
+		name = "Tomatoview.m: 32";
+		rLen = 0;
+		rLoc = 762;
+		rType = 0;
+		vrLen = 848;
+		vrLoc = 0;
+	};
+	4722567810F6F75F00671C90 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 47BD6CE310E1F65100F5E4CD /* Tomatoview.m */;
+		name = "Tomatoview.m: 26";
+		rLen = 0;
+		rLoc = 658;
+		rType = 0;
+		vrLen = 848;
+		vrLoc = 0;
+	};
 	478853DF10F2E35D00185FE5 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
@@ -893,8 +926,8 @@
 	};
 	47BD6CE310E1F65100F5E4CD /* Tomatoview.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {906, 7826}}";
-			sepNavSelRange = "{129, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {906, 7812}}";
+			sepNavSelRange = "{658, 0}";
 			sepNavVisRange = "{0, 848}";
 			sepNavWindowFrame = "{{15, 47}, {750, 694}}";
 		};
