@@ -2,16 +2,16 @@
 {
 	1D3623240D0F684500981E51 /* TomatoClockAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {629, 503}}";
-			sepNavSelRange = "{165, 1}";
-			sepNavVisRange = "{0, 432}";
+			sepNavIntBoundsRect = "{{0, 0}, {629, 526}}";
+			sepNavSelRange = "{354, 190}";
+			sepNavVisRange = "{0, 547}";
 		};
 	};
 	1D3623250D0F684500981E51 /* TomatoClockAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {629, 640}}";
-			sepNavSelRange = "{835, 0}";
-			sepNavVisRange = "{51, 804}";
+			sepNavIntBoundsRect = "{{0, 0}, {629, 560}}";
+			sepNavSelRange = "{571, 0}";
+			sepNavVisRange = "{3, 856}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* TomatoClock */ = {
@@ -136,14 +136,17 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 284554148;
-			PBXWorkspaceStateSaveDate = 284554148;
+			PBXPerProjectTemplateStateSaveDate = 284613841;
+			PBXWorkspaceStateSaveDate = 284613841;
 		};
 		perUserProjectItems = {
 			47218B2910F207F700FDB3D3 = 47218B2910F207F700FDB3D3 /* PBXTextBookmark */;
 			47218B2A10F207F700FDB3D3 = 47218B2A10F207F700FDB3D3 /* PBXTextBookmark */;
 			478853DF10F2E35D00185FE5 = 478853DF10F2E35D00185FE5 /* PlistBookmark */;
 			478AA3AB10E3894000376337 = 478AA3AB10E3894000376337 /* PlistBookmark */;
+			478F12E710F6DBCE00DF88F5 = 478F12E710F6DBCE00DF88F5 /* PBXTextBookmark */;
+			478F12FD10F6DCCD00DF88F5 = 478F12FD10F6DCCD00DF88F5 /* PBXTextBookmark */;
+			478F130510F6DCF000DF88F5 /* PBXTextBookmark */ = 478F130510F6DCF000DF88F5 /* PBXTextBookmark */;
 			47A6D14A10F446E300158452 = 47A6D14A10F446E300158452 /* PBXBookmark */;
 			47A6D14B10F446E300158452 = 47A6D14B10F446E300158452 /* PBXBookmark */;
 			47A6D14F10F446E300158452 = 47A6D14F10F446E300158452 /* PBXBookmark */;
@@ -156,18 +159,28 @@
 			47A6D1C010F457D800158452 = 47A6D1C010F457D800158452 /* PBXBookmark */;
 			47A6D1C110F457D800158452 = 47A6D1C110F457D800158452 /* PBXBookmark */;
 			47A6D1C210F457D800158452 = 47A6D1C210F457D800158452 /* PBXBookmark */;
-			47A6D1C310F457D800158452 = 47A6D1C310F457D800158452 /* PBXTextBookmark */;
-			47A6D1C410F457D800158452 = 47A6D1C410F457D800158452 /* PBXTextBookmark */;
-			47A6D1CB10F457D800158452 = 47A6D1CB10F457D800158452 /* PBXTextBookmark */;
 			47A6D1FD10F45D1600158452 = 47A6D1FD10F45D1600158452 /* PBXTextBookmark */;
-			47A6D20010F45D1600158452 = 47A6D20010F45D1600158452 /* PBXBookmark */;
 			47BD6D2010E20E8200F5E4CD = 47BD6D2010E20E8200F5E4CD /* PBXTextBookmark */;
 			47BD6D2210E20E8200F5E4CD = 47BD6D2210E20E8200F5E4CD /* PBXTextBookmark */;
 			47BD6D2510E20E8200F5E4CD = 47BD6D2510E20E8200F5E4CD /* PBXTextBookmark */;
-			47D02C1710F3317A004915AE = 47D02C1710F3317A004915AE /* PBXTextBookmark */;
 			47D02C1E10F3317A004915AE = 47D02C1E10F3317A004915AE /* PBXTextBookmark */;
 			47D02C2610F3317A004915AE = 47D02C2610F3317A004915AE /* PBXTextBookmark */;
-			47F6C99710F5F38D0049FF57 = 47F6C99710F5F38D0049FF57 /* PBXBookmark */;
+			47F6C9F010F609080049FF57 = 47F6C9F010F609080049FF57 /* PBXBookmark */;
+			47F6C9F110F609080049FF57 = 47F6C9F110F609080049FF57 /* PBXBookmark */;
+			47F6C9F210F609080049FF57 = 47F6C9F210F609080049FF57 /* PBXBookmark */;
+			47F6C9F310F609080049FF57 = 47F6C9F310F609080049FF57 /* PBXBookmark */;
+			47F6C9F410F609080049FF57 = 47F6C9F410F609080049FF57 /* PBXBookmark */;
+			47F6C9F510F609080049FF57 = 47F6C9F510F609080049FF57 /* PBXTextBookmark */;
+			47F6C9F610F609080049FF57 = 47F6C9F610F609080049FF57 /* PBXTextBookmark */;
+			47F6C9F710F609080049FF57 = 47F6C9F710F609080049FF57 /* PBXTextBookmark */;
+			47F6C9F810F609080049FF57 = 47F6C9F810F609080049FF57 /* PBXTextBookmark */;
+			47F6C9FA10F609080049FF57 = 47F6C9FA10F609080049FF57 /* PBXBookmark */;
+			47F6C9FB10F609080049FF57 = 47F6C9FB10F609080049FF57 /* PBXBookmark */;
+			47F6C9FC10F609080049FF57 = 47F6C9FC10F609080049FF57 /* PBXBookmark */;
+			47F6C9FD10F609080049FF57 = 47F6C9FD10F609080049FF57 /* PBXBookmark */;
+			47F6C9FE10F609080049FF57 = 47F6C9FE10F609080049FF57 /* PBXBookmark */;
+			47F6CA0010F609080049FF57 = 47F6CA0010F609080049FF57 /* PBXTextBookmark */;
+			47F6CA0110F609080049FF57 = 47F6CA0110F609080049FF57 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 47BD6CE010E1F64B00F5E4CD /* Source Control */;
 		userBuildSettings = {
@@ -236,6 +249,36 @@
 		rLen = 0;
 		rLoc = 2147483647;
 	};
+	478F12E710F6DBCE00DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* TomatoClockAppDelegate.m */;
+		name = "TomatoClockAppDelegate.m: 28";
+		rLen = 0;
+		rLoc = 571;
+		rType = 0;
+		vrLen = 856;
+		vrLoc = 3;
+	};
+	478F12FD10F6DCCD00DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* TomatoClockAppDelegate.m */;
+		name = "TomatoClockAppDelegate.m: 28";
+		rLen = 0;
+		rLoc = 571;
+		rType = 0;
+		vrLen = 856;
+		vrLoc = 3;
+	};
+	478F130510F6DCF000DF88F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* TomatoClockAppDelegate.m */;
+		name = "TomatoClockAppDelegate.m: 28";
+		rLen = 0;
+		rLoc = 571;
+		rType = 0;
+		vrLen = 856;
+		vrLoc = 3;
+	};
 	47A6D14A10F446E300158452 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 4788542510F2E5F900185FE5 /* Picture 1.png */;
@@ -284,36 +327,6 @@
 		isa = PBXBookmark;
 		fRef = 47A6D18B10F44C7500158452 /* Break.png */;
 	};
-	47A6D1C310F457D800158452 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623240D0F684500981E51 /* TomatoClockAppDelegate.h */;
-		name = "TomatoClockAppDelegate.h: 9";
-		rLen = 1;
-		rLoc = 165;
-		rType = 0;
-		vrLen = 432;
-		vrLoc = 0;
-	};
-	47A6D1C410F457D800158452 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 47C1807110F3592E00DEAF2D /* TomatoClockAppDelegate.m */;
-		name = "TomatoClockAppDelegate.m: 37";
-		rLen = 0;
-		rLoc = 851;
-		rType = 0;
-		vrLen = 818;
-		vrLoc = 0;
-	};
-	47A6D1CB10F457D800158452 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 47C1807110F3592E00DEAF2D /* TomatoClockAppDelegate.m */;
-		name = "TomatoClockAppDelegate.m: 37";
-		rLen = 0;
-		rLoc = 851;
-		rType = 0;
-		vrLen = 818;
-		vrLoc = 0;
-	};
 	47A6D1FD10F45D1600158452 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 471425BE10EF4848000B2D79 /* Tomatoview.h */;
@@ -323,10 +336,6 @@
 		rType = 0;
 		vrLen = 1023;
 		vrLoc = 1895;
-	};
-	47A6D20010F45D1600158452 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 47A6D1F910F45C7C00158452 /* End.png */;
 	};
 	47BD6CD610E1F62100F5E4CD /* TomatoClock */ = {
 		isa = PBXExecutable;
@@ -412,23 +421,6 @@
 		vrLen = 481;
 		vrLoc = 0;
 	};
-	47C1807110F3592E00DEAF2D /* TomatoClockAppDelegate.m */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.objc;
-		name = TomatoClockAppDelegate.m;
-		path = /Users/gk/Desktop/TomatoClock/Classes/TomatoClockAppDelegate.m;
-		sourceTree = "<absolute>";
-	};
-	47D02C1710F3317A004915AE /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 32CA4F630368D1EE00C91783 /* TomatoClock_Prefix.pch */;
-		name = "TomatoClock_Prefix.pch: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 191;
-		vrLoc = 0;
-	};
 	47D02C1E10F3317A004915AE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 32CA4F630368D1EE00C91783 /* TomatoClock_Prefix.pch */;
@@ -449,8 +441,118 @@
 		vrLen = 1378;
 		vrLoc = 1150;
 	};
-	47F6C99710F5F38D0049FF57 /* PBXBookmark */ = {
+	47F6C9AD10F5FAC70049FF57 /* Introduction.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {900, 980}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 928}";
+		};
+	};
+	47F6C9AE10F5FAC70049FF57 /* Introduction.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {629, 526}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 662}";
+		};
+	};
+	47F6C9F010F609080049FF57 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 47A6D1F910F45C7C00158452 /* End.png */;
+	};
+	47F6C9F110F609080049FF57 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 47F6C9A510F5F3B70049FF57 /* Back.png */;
+	};
+	47F6C9F210F609080049FF57 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 47F6C9A710F5F3C00049FF57 /* Done.png */;
+	};
+	47F6C9F310F609080049FF57 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 47F6C9A910F5F3C90049FF57 /* info1.png */;
+	};
+	47F6C9F410F609080049FF57 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 47F6C9AB10F5F9AA0049FF57 /* Icon.png */;
+	};
+	47F6C9F510F609080049FF57 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* TomatoClock_Prefix.pch */;
+		name = "TomatoClock_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 191;
+		vrLoc = 0;
+	};
+	47F6C9F610F609080049FF57 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 47F6C9AE10F5FAC70049FF57 /* Introduction.h */;
+		name = "Introduction.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 662;
+		vrLoc = 0;
+	};
+	47F6C9F710F609080049FF57 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 47F6C9AD10F5FAC70049FF57 /* Introduction.m */;
+		name = "Introduction.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 928;
+		vrLoc = 0;
+	};
+	47F6C9F810F609080049FF57 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* TomatoClockAppDelegate.h */;
+		name = "TomatoClockAppDelegate.h: 16";
+		rLen = 190;
+		rLoc = 354;
+		rType = 0;
+		vrLen = 547;
+		vrLoc = 0;
+	};
+	47F6C9FA10F609080049FF57 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 47A6D1F910F45C7C00158452 /* End.png */;
+	};
+	47F6C9FB10F609080049FF57 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 47F6C9A510F5F3B70049FF57 /* Back.png */;
+	};
+	47F6C9FC10F609080049FF57 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 47F6C9A710F5F3C00049FF57 /* Done.png */;
+	};
+	47F6C9FD10F609080049FF57 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 47F6C9A910F5F3C90049FF57 /* info1.png */;
+	};
+	47F6C9FE10F609080049FF57 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 47F6C9AB10F5F9AA0049FF57 /* Icon.png */;
+	};
+	47F6CA0010F609080049FF57 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 47F6C9AE10F5FAC70049FF57 /* Introduction.h */;
+		name = "Introduction.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 662;
+		vrLoc = 0;
+	};
+	47F6CA0110F609080049FF57 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 47F6C9AD10F5FAC70049FF57 /* Introduction.m */;
+		name = "Introduction.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 928;
+		vrLoc = 0;
 	};
 }

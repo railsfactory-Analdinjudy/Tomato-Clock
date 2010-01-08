@@ -15,6 +15,8 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		4788542C10F2E5F900185FE5 /* Picture 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4788542510F2E5F900185FE5 /* Picture 1.png */; };
 		478AA0B810E3118200376337 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478AA0B710E3118200376337 /* AudioToolbox.framework */; };
+		478F131A10F6DDC800DF88F5 /* Start.caf in Resources */ = {isa = PBXBuildFile; fileRef = 478F131810F6DDC800DF88F5 /* Start.caf */; };
+		478F131B10F6DDC800DF88F5 /* clapping-crowd-studio-01.caf in Resources */ = {isa = PBXBuildFile; fileRef = 478F131910F6DDC800DF88F5 /* clapping-crowd-studio-01.caf */; };
 		47A3410610EC5CC900DB803F /* TomatoList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47A3410510EC5CC900DB803F /* TomatoList.xib */; };
 		47A3414710EC66C600DB803F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A3414610EC66C600DB803F /* libsqlite3.0.dylib */; };
 		47A3447010ECBF4600DB803F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A3446F10ECBF4600DB803F /* libsqlite3.0.dylib */; };
@@ -25,8 +27,6 @@
 		47A6D1A610F4554A00158452 /* Unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A6D1A510F4554A00158452 /* Unchecked.png */; };
 		47A6D1FA10F45C7C00158452 /* End.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A6D1F910F45C7C00158452 /* End.png */; };
 		47BD6CE410E1F65100F5E4CD /* Tomatoview.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BD6CE310E1F65100F5E4CD /* Tomatoview.m */; };
-		47F6C98210F5F0610049FF57 /* clapping-crowd-studio-01.caf in Resources */ = {isa = PBXBuildFile; fileRef = 47F6C98110F5F0610049FF57 /* clapping-crowd-studio-01.caf */; };
-		47F6C98410F5F0660049FF57 /* Start.caf in Resources */ = {isa = PBXBuildFile; fileRef = 47F6C98310F5F0660049FF57 /* Start.caf */; };
 		47F6C9A610F5F3B70049FF57 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F6C9A510F5F3B70049FF57 /* Back.png */; };
 		47F6C9A810F5F3C00049FF57 /* Done.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F6C9A710F5F3C00049FF57 /* Done.png */; };
 		47F6C9AA10F5F3C90049FF57 /* info1.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F6C9A910F5F3C90049FF57 /* info1.png */; };
@@ -52,6 +52,8 @@
 		32CA4F630368D1EE00C91783 /* TomatoClock_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TomatoClock_Prefix.pch; sourceTree = "<group>"; };
 		4788542510F2E5F900185FE5 /* Picture 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Picture 1.png"; sourceTree = "<group>"; };
 		478AA0B710E3118200376337 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		478F131810F6DDC800DF88F5 /* Start.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Start.caf; sourceTree = "<group>"; };
+		478F131910F6DDC800DF88F5 /* clapping-crowd-studio-01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "clapping-crowd-studio-01.caf"; sourceTree = "<group>"; };
 		47A3410510EC5CC900DB803F /* TomatoList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TomatoList.xib; sourceTree = "<group>"; };
 		47A3414610EC66C600DB803F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = /opt/local/lib/libsqlite3.0.dylib; sourceTree = "<absolute>"; };
 		47A3446F10ECBF4600DB803F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsqlite3.0.dylib; sourceTree = "<group>"; };
@@ -64,8 +66,6 @@
 		47BD6CE210E1F65100F5E4CD /* Tomatoview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tomatoview.h; sourceTree = "<group>"; };
 		47BD6CE310E1F65100F5E4CD /* Tomatoview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tomatoview.m; sourceTree = "<group>"; };
 		47BD6CE610E1F67700F5E4CD /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Tomatoview.xib; sourceTree = "<group>"; };
-		47F6C98110F5F0610049FF57 /* clapping-crowd-studio-01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "clapping-crowd-studio-01.caf"; sourceTree = "<group>"; };
-		47F6C98310F5F0660049FF57 /* Start.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Start.caf; sourceTree = "<group>"; };
 		47F6C9A510F5F3B70049FF57 /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back.png; sourceTree = "<group>"; };
 		47F6C9A710F5F3C00049FF57 /* Done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Done.png; sourceTree = "<group>"; };
 		47F6C9A910F5F3C90049FF57 /* info1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info1.png; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				4788545110F2E8B200185FE5 /* Media */,
+				478F12E610F6DB9D00DF88F5 /* Media */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -148,6 +148,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				478F131810F6DDC800DF88F5 /* Start.caf */,
+				478F131910F6DDC800DF88F5 /* clapping-crowd-studio-01.caf */,
 				47F6C9B110F5FAD10049FF57 /* Introduction.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -169,15 +171,6 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		478853FE10F2E50700185FE5 /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				47F6C98310F5F0660049FF57 /* Start.caf */,
-				47F6C98110F5F0610049FF57 /* clapping-crowd-studio-01.caf */,
-			);
-			name = Audio;
 			sourceTree = "<group>";
 		};
 		4788540410F2E53200185FE5 /* Video */ = {
@@ -212,15 +205,22 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		4788545110F2E8B200185FE5 /* Media */ = {
+		478F12E610F6DB9D00DF88F5 /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				4788540410F2E53200185FE5 /* Video */,
+				478F130410F6DCE800DF88F5 /* Audio */,
 				4788540D10F2E53200185FE5 /* Icons */,
 				4788541F10F2E5F900185FE5 /* Images */,
-				478853FE10F2E50700185FE5 /* Audio */,
+				4788540410F2E53200185FE5 /* Video */,
 			);
 			name = Media;
+			sourceTree = "<group>";
+		};
+		478F130410F6DCE800DF88F5 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,14 +288,14 @@
 				47A6D1A410F4554500158452 /* Checked.png in Resources */,
 				47A6D1A610F4554A00158452 /* Unchecked.png in Resources */,
 				47A6D1FA10F45C7C00158452 /* End.png in Resources */,
-				47F6C98210F5F0610049FF57 /* clapping-crowd-studio-01.caf in Resources */,
-				47F6C98410F5F0660049FF57 /* Start.caf in Resources */,
 				47F6C9A610F5F3B70049FF57 /* Back.png in Resources */,
 				47F6C9A810F5F3C00049FF57 /* Done.png in Resources */,
 				47F6C9AA10F5F3C90049FF57 /* info1.png in Resources */,
 				47F6C9AC10F5F9AA0049FF57 /* Icon.png in Resources */,
 				47F6C9B210F5FAD10049FF57 /* Introduction.xib in Resources */,
 				47F6C9BD10F600EA0049FF57 /* About.xib in Resources */,
+				478F131A10F6DDC800DF88F5 /* Start.caf in Resources */,
+				478F131B10F6DDC800DF88F5 /* clapping-crowd-studio-01.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
