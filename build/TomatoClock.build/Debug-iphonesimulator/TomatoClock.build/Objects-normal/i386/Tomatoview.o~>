@@ -1,0 +1,23 @@
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m: In function '-[Tomatoview countDown]':
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:292: warning: 'Tomatoview' may not respond to '-updateLabel'
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:292: warning: (Messages without a matching method signature
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:292: warning: will be assumed to return 'id' and accept
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:292: warning: '...' as arguments.)
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m: In function '-[Tomatoview countDowns]':
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:314: warning: 'Tomatoview' may not respond to '-updateLabel'
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m: In function '-[Tomatoview play2]':
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:339: warning: 'Tomatoview' may not respond to '-updateLabel'
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m: In function '-[Tomatoview play1]':
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:363: warning: 'Tomatoview' may not respond to '-updateLabel'
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m: In function '-[Tomatoview About]':
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:621: warning: passing argument 2 of 'setAnimationTransition:forView:cache:' from distinct Objective-C type
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:607: warning: unused variable 'myview'
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m: At top level:
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:646: warning: incomplete implementation of class 'Tomatoview'
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:646: warning: method definition for '-ontimer1' not found
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:646: warning: method definition for '-ontimer' not found
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:646: warning: method definition for '-InsertdataintoDatabase' not found
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:646: warning: method definition for '-checkAndCreateDatabase' not found
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:646: warning: method definition for '-mydates' not found
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:646: warning: method definition for '-stop1' not found
+/Users/gk/Desktop/judy/Workfiles/iPhone Projects/Tomato-Clock/Classes/Tomatoview.m:646: warning: method definition for '-timerTick' not found
