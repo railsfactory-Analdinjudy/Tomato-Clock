@@ -138,6 +138,7 @@ BOOL isPlay2 =FALSE;
 	printf("start............. \n");
 	btnstart.hidden =TRUE;
 	btnpause.hidden=FALSE;
+	btnpause.enabled=TRUE;
 	btnreset.enabled=TRUE;
 	//btnreset.hidden =FALSE;
 	
@@ -214,8 +215,8 @@ BOOL isPlay2 =FALSE;
 	
 	if(isPlayaudio1 ==TRUE)
 	{
-		
-		[timer10 invalidate];
+		printf("isPlayaudio1 ==TRUE");
+		[timer invalidate];
 	}	
 		
 /*	if(isPlay2 == FALSE)
@@ -505,6 +506,11 @@ BOOL isPlay2 =FALSE;
 	{    printf("isPlay2 == TRUE");
 		[timer10 invalidate];	
 	 	
+	}
+	else if(isPlayaudio1 == TRUE)
+	{
+		
+		[timer invalidate]; 	
 	}	
 	else
 	{
@@ -598,9 +604,10 @@ BOOL isPlay2 =FALSE;
 
 -(IBAction) About
 {
-	UIView *mainView = tomatoview.view;
+	UIView *mainView = self.view;
+	UIView *myview=about.view;
 	[UIView setAnimationDuration:1];
-	//[UIView setAnimationTransition:([mainView superview] ? UIViewAnimationTransitionFlipFromRight : UIViewAnimationTransitionFlipFromLeft) forView:self.view cache:YES];
+	//[UIView setAnimationTransition:([mainView myview] ? UIViewAnimationTransitionFlipFromRight : UIViewAnimationTransitionFlipFromLeft) forView:self.view cache:YES];
 	About *temp = [[About alloc] initWithNibName:@"About" bundle:nil];
 	self.about = temp;
 	[temp release];
