@@ -155,8 +155,7 @@ BOOL isPlay2 =FALSE;
 		timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self selector:@selector (countDown) userInfo:nil repeats:YES];
 		//timer1 = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self selector:@selector (ontimer) userInfo:nil repeats:YES];
 		
-		
-		
+				
 	}
 	
     
@@ -606,8 +605,20 @@ BOOL isPlay2 =FALSE;
 {
 	UIView *mainView = self.view;
 	UIView *myview=about.view;
-	[UIView setAnimationDuration:1];
+	
+	/*[UIView setAnimationTransition:([logTextView superview] ?
+									UIViewAnimationTransitionFlipFromLeft : UIViewAnimationTransitionFlipFromRight)
+						   forView:[self view] cache:YES];
+    [UIView setAnimationTransition:([logTextView superview] ?
+									UIViewAnimationTransitionFlipFromLeft : UIViewAnimationTransitionFlipFromRight)
+						   forView:[[self navigationController] view] cache:YES];*/
+   
+	
+	//[UIView setAnimationDuration:1];
 	//[UIView setAnimationTransition:([mainView myview] ? UIViewAnimationTransitionFlipFromRight : UIViewAnimationTransitionFlipFromLeft) forView:self.view cache:YES];
+	[UIView beginAnimations:nil context:NULL];
+	[UIView  setAnimationDuration:1.0];
+	[UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight  forView:self cache:YES];
 	About *temp = [[About alloc] initWithNibName:@"About" bundle:nil];
 	self.about = temp;
 	[temp release];
@@ -617,7 +628,7 @@ BOOL isPlay2 =FALSE;
 	[UIView setAnimationTransition:([mainView superview] ? UIViewAnimationTransitionFlipFromRight : UIViewAnimationTransitionFlipFromLeft) forView:self.view cache:YES];								
 	[window makeKeyAndVisible];
 	
-	
+	[UIView commitAnimations];
 	
 }
 

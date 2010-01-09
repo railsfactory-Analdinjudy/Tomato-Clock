@@ -54,12 +54,22 @@
 }
 
 -(IBAction) Back
+
 {
+	
+	
+	UIView *mainView =self.view;
+	//UIView 
+	[UIView beginAnimations:nil context:NULL];
+	[UIView  setAnimationDuration:1.0];
+	[UIView setAnimationTransition: UIViewAnimationTransitionFlipFromLeft  forView:self cache:YES];
 	Tomatoview *temp1 = [[Tomatoview alloc] initWithNibName:@"Tomatoview" bundle:nil];
 	self.tomatoview = temp1;
 	[temp1 release];
 	[self.view addSubview:self.tomatoview.view];
+	[UIView setAnimationTransition:([mainView superview] ? UIViewAnimationTransitionFlipFromLeft : UIViewAnimationTransitionFlipFromLeft) forView:self.view cache:YES];
 	[window makeKeyAndVisible];
+	[UIView commitAnimations];
 }
 
 @end
